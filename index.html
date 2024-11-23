@@ -1,19 +1,58 @@
 <html>
     <head>
+
         <title>Hammer Hacks</title>
+
         <style>
+
             img{
                 width: 600px;
                 height: auto;
             }
+
+            h1 {
+                color: red;
+            }
+
         </style>
+
     </head>
 
     <body>
+
         <h1>HammerHacks</h1>
         <p>I think HTML is neat!</p>
 
-        <img src="">
+        <img src="https://i.pinimg.com/enabled_lo_mid/736x/3c/f7/a6/3cf7a64c2caf8bd8c109ebc4228b119c.jpg">
+
+        <blockquote>"A Handshake Is Not Too Much to Ask, Even From a King"- Lebron James"</blockquote>
+        <button onclick="changeQoute()">Change Qoute</button>
+
+        <script>
+            var index = 0;
+
+            function changeQoute() 
+            {
+                var qoutes = [
+
+                    `"I really like coding! - katelyn "`,
+                    `"I like sleeping - katelyn"`,
+                    `"This is early! - katelyn"`,
+                    `"A Handshake Is Not Too Much to Ask, Even From a King"- Lebron James"`
+                ];
+
+                var blockquote = document.querySelector("blockquote");
+                blockqoute.innerHTML = qoutes[index];
+
+                index++;
+
+                if(index >=4){
+                    index = 0;
+                }
+            }
+
+        </script>
+
     </body>
 
 
